@@ -1,6 +1,7 @@
 
 #include "stdio.h"
 #include "string.h"
+#include "stdint.h"
 
 #include "pico/stdlib.h"
 #include "led-task.h"
@@ -46,4 +47,9 @@ default:
 void led_task_state_set(led_state_t state)
 {
     led_state = state;
+}
+
+void led_task_set_blink_period_ms(uint32_t period_ms)
+{
+	LED_BLINK_PERIOD_US = period_ms * 1000;
 }
