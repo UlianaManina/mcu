@@ -21,7 +21,7 @@ void protocol_task_init(api_t* device_api){
 void protocol_task_handle(char* command_string)
 
 {
-
+//command_string[strcspn(command_string, "\r\n")] = '\0';
 //	Добавляем в обработчик проверку на то, что `command_string` не равно `NULL`.
 //	Если `command_string` равно `NULL`, то выйти из обработчика: строка команды
 //	еще не получена;
@@ -29,6 +29,7 @@ if (!command_string)
 {
 return;
 }
+
 
 // логика обработки полученной строки. Делим ее на команду и аргументы:
  const char* command_name = command_string;
@@ -65,4 +66,12 @@ printf("received args: '%s'\n", command_args);
 }
  printf("Error: Unknown command '%s'\n", command_name);
  return;
+}
+
+void help_handle(void)
+{
+    for (int i = 0; api[i].command_name != NULL; i++) 
+    {
+        printf("'%s' - '%s'\n", api[i].command_name, api[i].command_help);
+    }
 }

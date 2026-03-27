@@ -1,0 +1,3 @@
+C:/Repositories/pico/mcu/02-control/pico-sdk-fetch/pico_sdk-subbuild/CMakeFiles/pico_sdk-populate.dir
+C:/Repositories/pico/mcu/02-control/pico-sdk-fetch/pico_sdk-subbuild/CMakeFiles/edit_cache.dir
+C:/Repositories/pico/mcu/02-control/pico-sdk-fetch/pico_sdk-subbuild/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Repositories/pico/mcu/02-control/pico-sdk-fetch/pico_sdk-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

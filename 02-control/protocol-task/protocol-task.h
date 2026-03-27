@@ -9,3 +9,5 @@ typedef struct
 
 void protocol_task_init(api_t* device_api);
 void protocol_task_handle(char* command_string);
+
+void help_handle(void); 
